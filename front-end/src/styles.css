@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+                    @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+
+                    html{
+                       scroll-behavior: smooth;
+                   }
+                   body {
+                   /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+                   overflow-x: hidden;
+                   }
+                   .wrapper{
+                        background-color:#252934;
+                       color: #fff; }
