@@ -14,6 +14,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     SkillsComponent,
     FooterComponent,
     ExperienceComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
