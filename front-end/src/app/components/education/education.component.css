@@ -1,0 +1,25 @@
+#education{
+
+  font-style: oblique;
+  background-color:#212529;
+
+}
+h2{
+  color: #fff;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+h5, p, small{
+  color: black;
+  font-family: 'Kurale', serif;
+}
+.row{
+ padding-left: 70px;
+ align-items: center;
+}
+
+.btn{
+  margin-top: 5px;
+  align-content: center;
+  margin-left: 425px;
+}

@@ -1,0 +1,63 @@
+.btn{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 12px;
+  border: none;
+}
+h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color:white;
+  margin-left: 90px;
+}
+p{
+  font-family: 'Kurale', serif;
+  font-size: 20px;
+  color:white;
+  position: relative;
+
+
+}
+.row{
+  padding: 40px;
+}
+div{
+  background-color:#252934;
+  text-align: center;
+}
+.me{
+  margin-left: 100px;
+}
+@media (min-width:576px) {
+  #fotoperfil{
+position: absolute;
+width: 16%;
+border-radius: 85%;
+box-shadow: 3px 3px 4px #8b223b;
+left: 4%;
+  }
+
+}
+@media (max-width:575px) {
+  #fotoperfil{
+position: relative;
+width: 25%;
+border-radius: 85%;
+box-shadow: 3px 3px 4px #8b223b;
+left: 16%;
+
+
+  }
+  p{
+    font-size: 15px;
+    margin-left: 100px;
+
+  }
+  h2{
+    font-size: 12px;
+  }
+}
+

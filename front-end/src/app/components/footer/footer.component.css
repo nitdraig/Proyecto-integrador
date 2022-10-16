@@ -1,0 +1,12 @@
+#footer{
+  background-color: #2e363b;
+}
+footer{
+  text-align: center;
+box-shadow: 10px -3px 5px #53585e;
+}
+p{
+  margin-top: 3px;
+  color: #fff;
+  font-family: 'Kurale', serif;
+}

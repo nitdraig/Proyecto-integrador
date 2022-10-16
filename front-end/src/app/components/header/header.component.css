@@ -1,0 +1,12 @@
+h1{
+  font-size: 65px;
+  font-family: 'Raleway', sans-serif;
+ }
+.btn{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 25px;
+  border-radius: 12px;
+  border: none;
+}

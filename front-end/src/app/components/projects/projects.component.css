@@ -1,0 +1,21 @@
+#projects{
+  background-color:#212529;
+
+}
+h2{
+  color: #fff;
+  padding: 30px;
+   font-family: 'Raleway', sans-serif;}
+h4,p{
+  color: #fff;
+  font-family: 'Kurale', serif;
+}
+img{
+  height: 35vh;
+box-shadow: 5px 5px 10px rgba(104, 99, 99, 0.253);
+
+}
+#sub{
+  padding: 30px;
+}
+

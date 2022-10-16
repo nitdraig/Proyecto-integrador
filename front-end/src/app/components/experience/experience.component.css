@@ -1,0 +1,42 @@
+
+#experience{
+
+  background-color:#1B242F;
+}
+/* .experience{
+ display: grid;
+ grid-template-columns: repeat(10, 1fr);
+ width: 100vw;
+ align-items: center;
+}
+#experience img{
+ width: 130%;
+ grid-column: 2/5;
+}
+.experience-headings{
+ grid-column: 6/10;
+ padding: 3em;
+} */
+.row{
+padding: 20px;
+}
+
+a, h2{
+font-family: 'Kurale', serif;
+}
+.tittle{
+color: #fff;
+padding-left: 50px;
+font-size: 40px;
+font-family: 'Raleway', sans-serif;
+}
+.tittle-exp{
+color: #fff;
+padding: 5px;
+
+
+}
+.subtittle-exp{
+color: #fff;
+
+}
