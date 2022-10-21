@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfolioA.A.Draig.Security.jwt;
 
 import com.portfolioA.A.Draig.Security.Entity.UsuarioPrincipal;
@@ -20,7 +17,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class JwtProvider {
-
     private final static Logger logger = LoggerFactory.getLogger(JwtProvider.class);
 
     @Value("$(jwt.secret)")
@@ -30,11 +26,11 @@ public class JwtProvider {
 
     public String generateToken(Authentication authentication) {
         UsuarioPrincipal usuarioPrincipal = (UsuarioPrincipal) authentication.getPrincipal();
-        return Jwts.builder().setSubject(usuarioPrincipal.getUsername()).setIssuedAt(new Date()).setExpiration(new Date(new Date().getTime() + expiration * 1000)).signWith(SignatureAlgorithm.HS512, secret).compact();
+        return Jwts.builder().setSubject(usuarioPrincipal.getUsername()).setIssuedAt(new Date()).setExpiration(new Date(new Date().getTime()+expiration*1000)).signWith(SignatureAlgorithm.HS512, secret).compact();
     }
 
-    public String getNombreUsuarioFromToken(String tokem) {
-        return Jwts.parser().setSigningKey(secret).parseClaimsJws(tokem).getBody().getSubject();
+    public String getNombreUsuarioFromToken(String token) {
+        return Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody().getSubject();
     }
 
     public boolean validateToken(String token) {
@@ -48,9 +44,9 @@ public class JwtProvider {
         } catch (ExpiredJwtException e) {
             logger.error("Token Expirado");
         } catch (IllegalArgumentException e) {
-            logger.error("Token vacío");
+            logger.error("Token vacio");
         } catch (SignatureException e) {
-            logger.error("Firma no válida ");
+            logger.error("Firma no valida");
         }
         return false;
 
