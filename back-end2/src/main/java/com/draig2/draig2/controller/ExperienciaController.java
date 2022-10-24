@@ -32,6 +32,7 @@ public class ExperienciaController {
         return new ResponseEntity<>(experiencia, HttpStatus.OK);
 
     }
+    @PostMapping ("/add")
     public ResponseEntity<Experiencia> crearExperiencia(@RequestBody Experiencia experiencia){
         Experiencia nuevaExperiencia = experienciaService.addExperiencia(experiencia);
         return new ResponseEntity<>(nuevaExperiencia, HttpStatus.CREATED);

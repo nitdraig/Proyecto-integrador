@@ -12,18 +12,22 @@ public class Educacion {
     private Long idEdu;
     private String tituloEdu;
     private int fechaEdu;
+
     private String imagenEdu;
+    private String descripcionEdu;
+
 
     public Educacion() {
-
     }
 
-    public Educacion(Long idEdu, String tituloEdu, int fechaEdu, String imagenEdu) {
+    public Educacion(Long idEdu, String tituloEdu, int fechaEdu, String imagenEdu, String descripcionEdu) {
         this.idEdu = idEdu;
         this.tituloEdu = tituloEdu;
         this.fechaEdu = fechaEdu;
         this.imagenEdu = imagenEdu;
+        this.descripcionEdu = descripcionEdu;
     }
+
 
     public Long getIdEdu() {
         return idEdu;
@@ -49,11 +53,20 @@ public class Educacion {
         this.fechaEdu = fechaEdu;
     }
 
+
     public String getImagenEdu() {
         return imagenEdu;
     }
 
     public void setImagenEdu(String imagenEdu) {
         this.imagenEdu = imagenEdu;
+    }
+
+    public String getDescripcionEdu() {
+        return descripcionEdu;
+    }
+
+    public void setDescripcionEdu(String descripcionEdu) {
+        this.descripcionEdu = descripcionEdu;
     }
 }

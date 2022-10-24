@@ -12,16 +12,18 @@ public class Proyectos {
     private String tituloProy;
     private int fechaProy;
     private String imagenProy;
+    private String descProy;
 
 
     public Proyectos() {
     }
 
-    public Proyectos(Long idProy, String tituloProy, int fechaProy, String imagenProy) {
+    public Proyectos(Long idProy, String tituloProy, int fechaProy, String imagenProy, String descProy) {
         this.idProy = idProy;
         this.tituloProy = tituloProy;
         this.fechaProy = fechaProy;
         this.imagenProy = imagenProy;
+        this.descProy = descProy;
     }
 
     public Long getIdProy() {
@@ -54,6 +56,13 @@ public class Proyectos {
 
     public void setImagenProy(String imagenProy) {
         this.imagenProy = imagenProy;
+    }
+    public String getDescProy() {
+        return descProy;
+    }
+
+    public void setDescProyProy(String descProy) {
+        this.descProy = descProy;
     }
 }
 

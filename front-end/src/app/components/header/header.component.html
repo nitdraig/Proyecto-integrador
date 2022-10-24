@@ -2,7 +2,7 @@
   <div class="row fondo align-content-center" id="home">
 
 
-    <h1 class="animate__animated animate__bounce text-white text-center bg-dark p-2 text-dark bg-opacity-25">  Hola mundo, me llamo Agustín. <p class="full"> Y soy Fullstack Developer Jr.</p> </h1>
+    <h1 *ngIf="usuario" class="animate__animated animate__bounce text-white text-center bg-dark p-2 text-dark bg-opacity-25">  Hola mundo, me llamo {{usuario.nombre}}. <p *ngIf="usuario" class="full"> Y soy {{usuario.titulo}}.</p> </h1>
     <style >
       .fondo {
         background-image: url("../../../assets/10.jpg");

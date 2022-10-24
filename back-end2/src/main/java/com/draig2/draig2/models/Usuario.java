@@ -16,6 +16,7 @@ public class Usuario implements Serializable {
     private String nombre;
     private String apellido;
     private String titulo;
+
     private String descripcion;
     private String fotoPerfil;
 
@@ -80,7 +81,7 @@ public class Usuario implements Serializable {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion) {
+    public void setDescripcion(String desc) {
         this.descripcion = descripcion;
     }
 

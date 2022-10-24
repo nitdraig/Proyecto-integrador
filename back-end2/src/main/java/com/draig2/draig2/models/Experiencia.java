@@ -12,16 +12,18 @@ public class Experiencia {
     private String tituloExp;
     private int fechaExp;
     private String imagenExp;
+    private String descExp;
 
 
     public Experiencia() {
     }
 
-    public Experiencia(Long idExp, String tituloExp, int fechaExp, String imagenExp) {
+    public Experiencia(Long idExp, String tituloExp, int fechaExp, String imagenExp, String descExp) {
         this.idExp = idExp;
         this.tituloExp = tituloExp;
         this.fechaExp = fechaExp;
         this.imagenExp = imagenExp;
+        this.descExp =  descExp;
     }
 
     public Long getIdExp() {
@@ -54,5 +56,13 @@ public class Experiencia {
 
     public void setImagenExp(String imagenExp) {
         this.imagenExp = imagenExp;
+    }
+
+    public String getDescExp() {
+        return descExp;
+    }
+
+    public void setDescExp(String descExp) {
+        this.descExp = descExp;
     }
 }

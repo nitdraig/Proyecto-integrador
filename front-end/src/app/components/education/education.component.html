@@ -1,32 +1,68 @@
 <div class="row" id="education" style=" padding-top: 55px;">
   <h2 class="tittle">Educación</h2>
 
-    <div class="row">
+    <div class="row" *ngFor="let education of educations">
       <div class="col-xs-8 col-sm-11 col-md-11 col-lg-11">
             <div class="list-group">
                 <a class="list-group-item list-group-item-action" >
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Escuela Secundaria Dr. Bernardo Houssay</h5>
-                    <small>2017</small>
+                    <h5 class="mb-1">{{education.descripcionEdu}}</h5>
+                    <small>{{education.fechaEdu}}</small>
                   </div>
-                  <p class="mb-1">Técnico minero</p>
+                  <p class="mb-1">{{education.tituloEdu}}</p>
 
+                  <a class="btn btn-danger tooltips"
+                  data-placement="top"
+                  data-toogle="tooltip"
+                  data-original-tittle="Edit"
+                  ><i class="fa fa-pencil"></i>
+
+                  </a>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Delete"
+                       ><i class="fa fa-times"></i></a>
                 </a>
                 <a class="list-group-item list-group-item-action" >
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">Fundación Carlos Slim</h5>
                       <small>2019</small>
                     </div>
-                    <p class="mb-1">  Liderazgo  </p>
+                    <p class="mb-1">  Liderazgo  </p>  <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
+
+
+
                   <a class="list-group-item list-group-item-action" >
                     <div class="d-flex w-100 justify-content-between">
                       <h5 class="mb-1">Came educativ@</h5>
                       <small>2019</small>
                     </div>
                     <p class="mb-1">Administración de empresas PYMES </p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
                   <a class="list-group-item list-group-item-action" >
                     <div class="d-flex w-100 justify-content-between">
@@ -34,7 +70,18 @@
                       <small>2021</small>
                     </div>
                     <p class="mb-1">  #SeProgramar </p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
                 <a class="list-group-item list-group-item-action" >
                     <div class="d-flex w-100 justify-content-between">
@@ -42,7 +89,18 @@
                       <small>2022</small>
                     </div>
                     <p class="mb-1"> JavaScript (Start coding) </p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
 
                   <a class="list-group-item list-group-item-action" >
@@ -51,7 +109,18 @@
                       <small>2022</small>
                     </div>
                     <p class="mb-1">Fundamentos de la contabilidad</p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
                   <a class="list-group-item list-group-item-action" >
                     <div class="d-flex w-100 justify-content-between">
@@ -59,7 +128,18 @@
                       <small>2022</small>
                     </div>
                     <p class="mb-1">  Basic english 1 & 2 </p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
                   <a class="list-group-item list-group-item-action" aria-current="true">
                     <div class="d-flex w-100 justify-content-between">
@@ -67,7 +147,18 @@
                       <small>Actualmente</small>
                     </div>
                     <p class="mb-1">Licenciatura en Ciencias ambientales</p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
 
                   <a class="list-group-item list-group-item-action" aria-current="true">
@@ -76,7 +167,18 @@
                       <small>Actualmente</small>
                     </div>
                     <p class="mb-1">Quality Assurance</p>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
 
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
 
                   <a class="list-group-item list-group-item-action active" aria-current="true">
@@ -87,6 +189,18 @@
 
                     <p class="mb-1">Programador FullStack Junior </p>
                     <small></small>
+                    <a class="btn btn-danger tooltips"
+                    data-placement="top"
+                    data-toogle="tooltip"
+                    data-original-tittle="Edit"
+                    ><i class="fa fa-pencil"></i>
+
+                    </a>
+                      <a class="btn btn-danger tooltips"
+                      data-placement="top"
+                      data-toogle="tooltip"
+                      data-original-tittle="Delete"
+                         ><i class="fa fa-times"></i></a>
                   </a>
 
 

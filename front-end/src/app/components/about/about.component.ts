@@ -1,6 +1,8 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { person } from 'src/app/model/person.model';
-import { PersonService } from 'src/app/service/person.service';
+import { Usuario } from 'src/app/models/usuario';
+import { HeaderService } from 'src/app/service/header.service';
+
 
 @Component({
   selector: 'app-about',
@@ -8,11 +10,22 @@ import { PersonService } from 'src/app/service/person.service';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  person: person = new person("","","");
-  constructor (public personService: PersonService) { }
+  public usuario: Usuario | undefined;
+  public editUsuario: Usuario | undefined;
+
+  constructor(private headerService : HeaderService) { }
 
   ngOnInit(): void {
-    this.personService.getPerson().subscribe(data => {this.person = data})
+    this.getUser();
   }
+  public getUser():void{
+    this.headerService.getUser().subscribe({
+    next: (response: Usuario)=>{
+    this.usuario=response;
+    },
+    error:(error:HttpErrorResponse)=>{
+    alert(error.message);
+    }
+    })
 
-}
+}}

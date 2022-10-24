@@ -30,7 +30,8 @@ public class EducacionController {
         return new ResponseEntity<>(educaciones, HttpStatus.OK);
 
     }
-   public ResponseEntity<Educacion> crearEducucacion(@RequestBody Educacion educacion){
+    @PostMapping ("/add")
+   public ResponseEntity<Educacion> crearEducacion(@RequestBody Educacion educacion){
         Educacion nuevaEducacion = educacionService.addEducacion(educacion);
         return new ResponseEntity<>(nuevaEducacion, HttpStatus.CREATED);
    }
