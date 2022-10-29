@@ -10,7 +10,7 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
     
-    //Gettes & Setters
+    //G&S
 
     public String getNombre() {
         return nombre;

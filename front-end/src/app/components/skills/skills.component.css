@@ -1,16 +1,18 @@
 #skills{
   background-color:#1B242F;
  }
-h2 {
-color: #fff;
-font-family: 'Raleway', sans-serif;
-padding-left: 3em;
-padding-top: 1em;
+ h2{
+  font-family: 'Kurale', serif;
+  }
+  .tittle{
+  color: #fff;
+  padding-left: 75px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  }
 
-}
-
-h3{
-color: #fff;
-font-family: 'Kurale', serif;
-font-size: 1.3em;
-}
+  .circle{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    }

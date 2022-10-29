@@ -1,12 +1,14 @@
 #educacion{
 
-
   background-color:#212529;
 
 }
-
-a, h2{
+h2{
   font-family: 'Kurale', serif;
-  color: #fff;
   }
-
+  .tittle{
+  color: #fff;
+  padding-left: 75px;
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+  }

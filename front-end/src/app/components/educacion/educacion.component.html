@@ -1,12 +1,11 @@
 <div class="row" id="educacion" style=" padding-top: 70px;">
   <h2 class="tittle">Educación</h2>
   <div class="text-center">
-      <h1>Educacion</h1>
+
                     <!--boton agregar editar exp-->
       <button type= "button" class="btn btn-primary" routerLink="/nuevaedu" *ngIf="isLogged">
         <a class="nav-link" style="color:aliceblue">
-          Agregar Educacion</a></button>
-  </div>
+          Agregar Educacion</a></button></div>
 
 
   <div class="col lg 1" ></div>
@@ -15,7 +14,7 @@
           <tbody>
               <tr *ngFor="let Educacion of educacion">
                   <td>
-                      <h2>{{Educacion.nombreE}}</h2>
+                      <h2 style="color: #fff;">{{Educacion.nombreE}}</h2>
                   </td>
                   <td style="color: #fff; padding-top: 18.5px;" >{{Educacion.descripcionE}}</td>
                   <td *ngIf="isLogged">
