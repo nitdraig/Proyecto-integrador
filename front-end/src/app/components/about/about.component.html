@@ -1,14 +1,22 @@
 
   <div class="row" id="about-info" style=" padding-top: 100px;" >
 
+    <div class="text-center ">
+      <button type= "button" class="btn btn-primary"  >
+          <a class="nav-link" style="color:aliceblue">
+          Editar "Acerca de..."<span class="sr-only">(current)</span>
+</a>
+      </button>
+  </div>
+
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
 
       <img src="../../../assets/draig2.jpg" class="img-fluid" id="fotoperfil">
 
     </div>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
-  <p *ngIf="usuario" class="name"> {{usuario.apellido}} {{usuario.nombre}} </p>
-      <p *ngIf="usuario" class="tittle"> {{usuario.titulo}}</p>
+  <p  class="name"> Avellaneda Agustín </p>
+      <p  class="tittle"> FullStack Developer Jr</p>
       <a class="btn btn-danger tooltips"
       data-placement="top"
       data-toggle="tooltip"

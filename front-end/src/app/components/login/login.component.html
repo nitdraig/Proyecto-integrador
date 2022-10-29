@@ -1,7 +1,3 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 <div class="sidenav">
          <div class="login-main-text">
@@ -12,18 +8,29 @@
       <div class="main">
          <div class="col-md-6 col-sm-12">
             <div class="login-form">
-               <form>
-                  <div class="form-group">
-                     <label>Nombre de Usuario</label>
-                     <input type="text" class="form-control" placeholder="Usuario">
-                  </div>
-                  <div class="form-group">
-                     <label>Contraseña</label>
-                     <input type="password" class="form-control" placeholder="Contraseña">
-                  </div>
-                  <button type="submit" class="btn btn-black">Login</button>
-                  <button type="submit" class="btn btn-secondary">Registro</button>
-               </form>
+
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="nombreUsuario">Usuario</label>
+                  <input type="text" id="nombreUsuario"  name="nombreUsuario" class="form-control "placeholder="Usuario"
+                    [(ngModel)]="nombreUsuario" required />
+
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <label class="form-label" for="password"
+                  >Contraseña</label
+                >
+                <input type="password" id="password"  name="password" class="form-control form-control-lg" placeholder="Contraseña" [(ngModel)]="password"
+                required />
+
+
+                </div>
+               <button class="btn btn-outline-dark btn-sm px-5"  type="submit">
+                  Ingresar
+                </button>
+  </form>
+
             </div>
          </div>
       </div>

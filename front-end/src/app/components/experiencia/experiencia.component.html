@@ -1,0 +1,46 @@
+  <div class="row" id="experiencia" style=" padding-top: 75px;">
+
+    <h2 class="tittle">Experiencia laboral</h2>
+    <div class="text-center">
+       <!--boton agregar editar exp-->
+      <button type= "button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged">
+        <a class="nav-link" style="color:aliceblue">
+          Agregar Experiencia</a></button>
+  </div>
+
+
+  <div class="col lg 1" ></div>
+  <div class="col-lg-11" style="padding-top: 15px;">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let Experiencia of expe">
+                  <td>
+                      <h2>{{Experiencia.nombreE}}</h2>
+                  </td>
+                  <td style="color: #fff; padding-top: 18.5px;" >{{Experiencia.descripcionE}}</td>
+                  <td *ngIf="isLogged">
+                    <!--boton editar-->
+                      <a class="btn btn-secondary tooltips"
+                                   data-placement="top"
+                                   data-toggle="tooltip"
+                                   data-original-tittle="Edit"
+                                   routerLink="/editexp/{{Experiencia.id}}"
+                                   ><i class="fa fa-pencil"></i></a></td>
+
+
+                  <td *ngIf="isLogged">
+                      <!--boton borrar-->
+                        <a class="btn btn-danger tooltips"
+                        data-placement="top"
+                        data-toggle="tooltip"
+                        data-original-tittle="Delete"
+                        (click)="delete(Experiencia.id)"
+                          ><i class="fa fa-times"></i>	</a></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+</div>
+
+

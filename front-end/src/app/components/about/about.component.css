@@ -1,11 +1,4 @@
-.btn{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 12px;
-  border: none;
-}
+
 h2{
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -34,7 +27,7 @@ div{
 @media (min-width:576px) {
   #fotoperfil{
 position: absolute;
-width: 16%;
+width: 90%;
 border-radius: 85%;
 box-shadow: 3px 3px 4px #8b223b;
 left: 4%;

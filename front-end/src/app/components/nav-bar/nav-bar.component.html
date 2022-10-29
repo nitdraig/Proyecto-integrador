@@ -21,10 +21,10 @@ crossorigin="anonymous"
           <a class="nav-link active text-white "  href="#about-info">Acerca de mi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#experience">Experiencia</a>
+          <a class="nav-link active text-white" aria-current="page" href="#experiencia">Experiencia</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#education">Educación</a>
+          <a class="nav-link active text-white" aria-current="page" href="#educacion">Educación</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active text-white" aria-current="page" href="#skills">Habilidades</a>
@@ -36,7 +36,8 @@ crossorigin="anonymous"
       <a href="https://www.linkedin.com/in/agust%C3%ADn-avellaneda-9b392b192/" target="_blank"> <img src="../../../assets/linkedin.png" width="45px" id="logos"> </a>
       <a href="https://github.com/nitdraig" target="_blank"> <img src="../../../assets/github.png" width="45px" id="logos"> </a>
       <a href="https://www.instagram.com/nitdraig/" target="_blank"> <img src="../../../assets/instagram.png" width="45px" id="logos"> </a>
-      <button type="button" class="btn btn-light" (click)="login()">Log in</button>
+      <button type="button" class="btn btn-light" (click)="login()" *ngIf="!isLogged">Log In</button>
+      <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Log Out</button>
     </div>
   </div>
 </nav>
