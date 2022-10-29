@@ -5,6 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './components/educacion/new-educacion.component';
+import { EditeducacionComponent } from './components/educacion/edit-educacion.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -12,7 +13,7 @@ const routes: Routes = [
   {path: 'nuevaexp', component: NewExperienciaComponent},
   {path: 'editexp/:id', component: EditExperienciaComponent},
   {path: 'nuevaedu', component: NeweducacionComponent},
-  {path: 'editedu/:id', component: EditExperienciaComponent}
+  {path: 'editedu/:id', component: EditeducacionComponent}
 
 ];
 
