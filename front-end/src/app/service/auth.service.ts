@@ -11,7 +11,7 @@ import { NuevoUsuario } from '../models/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-   URL = environment.URL + 'auth/';
+   URL = 'https://backenddraig.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

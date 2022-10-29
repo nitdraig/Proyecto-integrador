@@ -8,7 +8,7 @@ import { Skill } from "../models/skill";
   providedIn: 'root'
 })
 export class SkillService {
-  URL = environment.URL + 'skill/';
+  URL = 'https://backenddraig.herokuapp.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
