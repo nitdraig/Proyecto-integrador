@@ -23,6 +23,9 @@ import { EditeducacionComponent } from './components/educacion/edit-educacion.co
 import { NewSkillComponent } from './components/skills/new-skill.component';
 import { EditSkillComponent } from './components/skills/edit-skill.component';
 import { EditAcercadeComponent } from './components/about/edit-acercade.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 
@@ -55,7 +58,9 @@ import { EditAcercadeComponent } from './components/about/edit-acercade.componen
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
 
 
   ],

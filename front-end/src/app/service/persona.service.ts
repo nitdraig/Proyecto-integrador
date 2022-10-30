@@ -10,7 +10,7 @@ import { persona } from '../models/persona.model';
 })
 
 export class PersonaService {
- URL = environment.URL + 'personas/';
+ URL = 'https://backenddraig.herokuapp.com/personas/';
 ;
 
   constructor(private httpClient: HttpClient) { }

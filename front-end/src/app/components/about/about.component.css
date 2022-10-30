@@ -26,11 +26,11 @@ div{
 }
 @media (min-width:576px) {
   #fotoperfil{
-position: absolute;
-width: 90%;
+/* position: absolute;
+width: 90%; */
 border-radius: 85%;
 box-shadow: 3px 3px 4px #8b223b;
-left: 4%;
+/* left: 4%; */
   }
 
 }
