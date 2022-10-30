@@ -10,6 +10,7 @@ padding: 20px;
 
 a, h2{
 font-family: 'Kurale', serif;
+color: #FFF;
 }
 .tittle{
 color: #fff;
@@ -23,9 +24,7 @@ padding: 5px;
 
 
 }
-h2{
-  color: #fff;
-}
+
 
 #tabla{
   margin-top: 30px;
