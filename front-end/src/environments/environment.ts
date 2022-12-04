@@ -13,7 +13,8 @@ export const environment = {
     messagingSenderId: '1027991914787',
   },
   production: false,
-  URL: 'https://backenddraig.herokuapp.com'
+  // URL: 'https://backenddraig.herokuapp.com'
+  URL: 'https://demo-portfolio-nitdraig.koyeb.app'
 };
 
 /*

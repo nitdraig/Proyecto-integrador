@@ -10,7 +10,8 @@ import { persona } from '../models/persona.model';
 })
 
 export class PersonaService {
- URL = 'https://backenddraig.herokuapp.com/personas/';
+//  URL = 'https://backenddraig.herokuapp.com/personas/';
+ URL = 'https://demo-portfolio-nitdraig.koyeb.app/personas/';
 ;
 
   constructor(private httpClient: HttpClient) { }

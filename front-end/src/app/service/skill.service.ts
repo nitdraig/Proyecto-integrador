@@ -8,7 +8,8 @@ import { Skill } from "../models/skill";
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://backenddraig.herokuapp.com/skill/';
+  // URL = 'https://backenddraig.herokuapp.com/skill/';
+  URL = 'https://demo-portfolio-nitdraig.koyeb.app/skill/';
 // environment.URL
   constructor(private httpClient: HttpClient) { }
 
