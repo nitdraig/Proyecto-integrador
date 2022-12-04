@@ -14,7 +14,7 @@ export const environment = {
   },
   production: false,
   // URL: 'https://backenddraig.herokuapp.com'
-  URL: 'https://demo-portfolio-nitdraig.koyeb.app'
+  URL: 'https://demo-portfolio2-nitdraig.koyeb.app'
 };
 
 /*

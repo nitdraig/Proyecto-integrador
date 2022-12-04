@@ -12,7 +12,7 @@ import { NuevoUsuario } from '../models/nuevo-usuario';
 })
 export class AuthService {
   //  URL = 'https://backenddraig.herokuapp.com/auth/';
-   URL = 'https://demo-portfolio-nitdraig.koyeb.app/auth/';
+   URL = 'https://demo-portfolio2-nitdraig.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

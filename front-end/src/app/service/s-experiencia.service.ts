@@ -10,7 +10,7 @@ import { Experiencia } from '../models/experiencia';
 })
 export class SExperienciaService {
   // URL = 'https://backenddraig.herokuapp.com/explab/';
-  URL = 'https://demo-portfolio-nitdraig.koyeb.app/explab/';
+  URL = 'https://demo-portfolio2-nitdraig.koyeb.app/explab/';
 
   constructor(private httpClient: HttpClient) { }
 

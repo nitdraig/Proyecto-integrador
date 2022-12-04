@@ -9,7 +9,7 @@ import { Skill } from "../models/skill";
 })
 export class SkillService {
   // URL = 'https://backenddraig.herokuapp.com/skill/';
-  URL = 'https://demo-portfolio-nitdraig.koyeb.app/skill/';
+  URL = 'https://demo-portfolio2-nitdraig.koyeb.app/skill/';
 // environment.URL
   constructor(private httpClient: HttpClient) { }
 
