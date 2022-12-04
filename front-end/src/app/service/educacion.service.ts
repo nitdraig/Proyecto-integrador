@@ -8,8 +8,8 @@ import { Educacion } from '../models/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  // URL = 'https://backenddraig.herokuapp.com/educacion/';
-  URL = 'https://demo-portfolio2-nitdraig.koyeb.app/educacion/';
+URL = 'https://backenddraig.herokuapp.com/educacion/';
+
 
 
   constructor(private httpClient : HttpClient) { }
