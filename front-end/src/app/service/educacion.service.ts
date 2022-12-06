@@ -8,7 +8,8 @@ import { Educacion } from '../models/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-URL = 'https://backenddraig.herokuapp.com/educacion/';
+// URL = 'https://backenddraig.herokuapp.com/educacion/';
+URL = 'https://2-production-2480.up.railway.app/educacion/';
 
 
 
