@@ -14,7 +14,8 @@ export const environment = {
   },
   production: false,
   // URL: 'https://backenddraig.herokuapp.com'
-  URL: 'https://2-production-2480.up.railway.app'
+  //URL: 'https://2-production-2480.up.railway.app'
+  URL: 'https://proyect-ap-nitdraig.koyeb.app'
 
 };
 
