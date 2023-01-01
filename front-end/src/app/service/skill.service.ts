@@ -9,8 +9,8 @@ import { Skill } from "../models/skill";
 })
 export class SkillService {
   // URL = 'https://backenddraig.herokuapp.com/skill/';
- // URL = 'https://2-production-2480.up.railway.app/skill/';
-  URL: 'https://proyect-ap-nitdraig.koyeb.app/skill/';
+ URL = 'https://back-end-ap-production.up.railway.app/skill/';
+//  URL: 'https://proyect-ap-nitdraig.koyeb.app/skill/';
 // environment.URL
   constructor(private httpClient: HttpClient) { }
 
