@@ -11,7 +11,7 @@ import { persona } from '../models/persona.model';
 
 export class PersonaService {
 // URL = 'https://backenddraig.herokuapp.com/personas/';
-URL = 'https://back-end-ap-production.up.railway.app/personas/';
+URL = 'https://back-end-draig.onrender.com/personas/';
 //URL: 'https://proyect-ap-nitdraig.koyeb.app/personas/';
 
 

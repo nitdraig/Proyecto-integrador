@@ -12,7 +12,7 @@ import { NuevoUsuario } from '../models/nuevo-usuario';
 })
 export class AuthService {
   // URL = 'https://backenddraig.herokuapp.com/auth/';
-    URL = 'https://back-end-ap-production.up.railway.app/auth/';
+    URL = 'https://back-end-draig.onrender.com/auth/';
   //  URL: 'https://proyect-ap-nitdraig.koyeb.app/auth/';
 
   constructor(private httpClient: HttpClient) { }

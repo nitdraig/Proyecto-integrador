@@ -10,7 +10,7 @@ import { Experiencia } from '../models/experiencia';
 })
 export class SExperienciaService {
   //  URL = 'https://backenddraig.herokuapp.com/explab/';
-    URL = 'https://back-end-ap-production.up.railway.app/explab/';
+    URL = 'https://back-end-draig.onrender.com/explab/';
   // URL: 'https://proyect-ap-nitdraig.koyeb.app/explab/';
 
 

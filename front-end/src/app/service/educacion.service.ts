@@ -9,7 +9,7 @@ import { Educacion } from '../models/educacion';
 })
 export class EducacionService {
 // URL = 'https://backenddraig.herokuapp.com/educacion/';
-  URL = 'https://back-end-ap-production.up.railway.app/educacion/';
+  URL = 'https://back-end-draig.onrender.com/educacion/';
 //URL: 'https://proyect-ap-nitdraig.koyeb.app/educacion/';
 
 
